@@ -11,6 +11,8 @@ LOCAL=".repo/local_manifests"
 
 if repo init --depth=1 -u $GIT/$ARATA/arrow_manifest.git -b arrow-13.1_ext; then
      echo -e "================================"
+     echo -e "=      Build starting...       ="
+     echo -e "================================"
      echo -e "=  Repo has been initialized   ="
      echo -e "================================"
      if [ -d "$LOCAL" ]; then
@@ -51,6 +53,6 @@ if repo init --depth=1 -u $GIT/$ARATA/arrow_manifest.git -b arrow-13.1_ext; then
      fi
 else
      echo -e "================================"
-     echo -e "=   Initialyzing repo failed   ="
+     echo -e "=         Build Failed         ="
      echo -e "================================"
 fi
